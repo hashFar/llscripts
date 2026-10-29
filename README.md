@@ -38,7 +38,7 @@ The project focuses on a clean interface, real-time database operations, user au
 The project uses a simple, single-page frontend architecture.
 
 ```text
-logic-lagao-scripts/
+llscripts/
 │
 ├── index.html       # Main application and frontend
 ├── logo.png         # Favicon/logo asset (if included)
@@ -46,9 +46,6 @@ logic-lagao-scripts/
 ```
 
 The frontend communicates directly with Supabase using its JavaScript client library, loaded through a CDN. A separate Node.js or Spring Boot backend is not required for this architecture.
-
-## Database Design
-The application uses Supabase, which provides a PostgreSQL database and authentication services.
 
 ## How the Application Works
 
