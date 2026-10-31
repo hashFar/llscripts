@@ -1,0 +1,195 @@
+/* Reusable controls: header buttons, filter pills, filter panel, add form, generic buttons */
+.logout-btn {
+   background: transparent;
+   border: 1px solid var(--border);
+   color: var(--text-dim);
+   padding: 6px 14px;
+   border-radius: 999px;
+   font-size: 13px;
+}
+
+.logout-btn:hover {
+   color: var(--text);
+   border-color: var(--accent);
+}
+
+.theme-toggle-btn {
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+   border: 1px solid var(--border);
+   background: transparent;
+   color: var(--text-dim);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+   padding: 0;
+}
+
+.theme-toggle-btn:hover {
+   color: var(--accent);
+   border-color: var(--accent);
+}
+
+.theme-toggle-btn svg {
+   width: 16px;
+   height: 16px;
+}
+
+.filter-btn {
+   background: var(--surface);
+   border: 1px solid var(--border);
+   color: var(--text-dim);
+   padding: 6px 12px;
+   border-radius: 999px;
+   font-size: 13px;
+}
+
+.filter-btn.active {
+   background: var(--accent-dim);
+   color: var(--accent);
+   border-color: var(--accent-dim);
+}
+
+.add-btn {
+   width: 34px;
+   height: 34px;
+   border-radius: 50%;
+   border: none;
+   background: var(--accent);
+   color: #1a1400;
+   font-size: 20px;
+   line-height: 1;
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+}
+
+/* Extra Name/Date filter panel — separate from the existing status tray */
+.filter-panel-wrapper {
+   position: relative;
+}
+
+.filter-panel-toggle-btn {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+}
+
+.filter-panel {
+   display: none;
+   position: absolute;
+   top: calc(100% + 6px);
+   right: 0;
+   background: var(--surface);
+   border: 1px solid var(--border);
+   border-radius: var(--radius);
+   padding: 12px;
+   width: 220px;
+   z-index: 20;
+   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.filter-panel.active {
+   display: block;
+}
+
+.filter-panel-group {
+   margin-bottom: 10px;
+}
+
+.filter-panel-group label {
+   display: block;
+   font-size: 12px;
+   color: var(--text-dim);
+   margin-bottom: 4px;
+}
+
+.filter-panel-group select {
+   width: 100%;
+   padding: 8px 10px;
+   border-radius: 8px;
+   border: 1px solid var(--border);
+   background: var(--surface-2);
+   color: var(--text);
+   font-size: 13px;
+   outline: none;
+}
+
+.filter-panel-group select:focus {
+   border-color: var(--accent);
+}
+
+.filter-panel-actions {
+   display: flex;
+   gap: 8px;
+   justify-content: flex-end;
+}
+
+/* Add-script form */
+.add-form {
+   display: none;
+   background: var(--surface);
+   border: 1px solid var(--border);
+   border-radius: var(--radius);
+   padding: 16px;
+   margin-bottom: 18px;
+}
+
+.add-form.active {
+   display: block;
+}
+
+.add-form label {
+   display: block;
+   font-size: 12px;
+   color: var(--text-dim);
+   margin-bottom: 4px;
+}
+
+.add-form input,
+.add-form textarea {
+   width: 100%;
+   padding: 10px 12px;
+   border-radius: 8px;
+   border: 1px solid var(--border);
+   background: var(--surface-2);
+   color: var(--text);
+   font-size: 14px;
+   outline: none;
+   margin-bottom: 12px;
+   resize: vertical;
+}
+
+.add-form input:focus,
+.add-form textarea:focus {
+   border-color: var(--accent);
+}
+
+.form-actions {
+   display: flex;
+   gap: 8px;
+   justify-content: flex-end;
+}
+
+.btn {
+   padding: 9px 16px;
+   border-radius: 8px;
+   border: none;
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.btn-primary {
+   background: var(--accent);
+   color: #1a1400;
+}
+
+.btn-secondary {
+   background: transparent;
+   color: var(--text-dim);
+   border: 1px solid var(--border);
+}

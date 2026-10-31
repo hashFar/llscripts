@@ -1,0 +1,19 @@
+/* Small-screen overrides — must load last */
+@media (max-width: 480px) {
+   .toolbar {
+      align-items: center;
+   }
+
+   .site-title {
+      font-size: 18px;
+   }
+
+   .reaction-comment-row {
+      gap: 6px;
+   }
+
+   .reaction-btn {
+      width: 30px;
+      height: 28px;
+   }
+}

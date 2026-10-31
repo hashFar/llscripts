@@ -1,0 +1,33 @@
+/* Theme colours and sizing tokens (dark is the default, light overrides it) */
+:root {
+   --bg: #121212;
+   --surface: #1a1a1a;
+   --surface-2: #212121;
+   --border: #2c2c2c;
+   --text: #ededed;
+   --text-dim: #9a9a9a;
+   --accent: #e8b84b;
+   --accent-dim: #6b5a2a;
+   --done: #4caf82;
+   --not-done: #d97a5f;
+   --approved: #5aa9e6;
+   --not-approved: #9a9a9a;
+   --danger: #d9534f;
+   --radius: 10px;
+}
+
+[data-theme="light"] {
+   --bg: #f5f5f4;
+   --surface: #ffffff;
+   --surface-2: #f0f0ef;
+   --border: #e0dfdc;
+   --text: #1c1c1c;
+   --text-dim: #6f6f6f;
+   --accent: #b8860b;
+   --accent-dim: #f1e2b8;
+   --done: #2f8f63;
+   --not-done: #c15f42;
+   --approved: #2f7fc1;
+   --not-approved: #6f6f6f;
+   --danger: #c0392b;
+}

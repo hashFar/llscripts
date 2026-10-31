@@ -1,0 +1,72 @@
+/* Login screen */
+#passwordScreen {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+
+.pw-card {
+   width: 100%;
+   max-width: 340px;
+   text-align: center;
+}
+
+.pw-title {
+   font-size: 28px;
+   font-weight: 700;
+   letter-spacing: -0.5px;
+   color: var(--accent);
+   margin-bottom: 28px;
+}
+
+.pw-input {
+   width: 100%;
+   padding: 12px 14px;
+   border-radius: var(--radius);
+   border: 1px solid var(--border);
+   background: var(--surface);
+   color: var(--text);
+   font-size: 15px;
+   outline: none;
+   margin-bottom: 12px;
+}
+
+#emailInput {
+   width: 100%;
+   padding: 12px 14px;
+   border-radius: var(--radius);
+   border: 1px solid var(--border);
+   background: var(--surface);
+   color: var(--text);
+   font-size: 15px;
+   outline: none;
+   margin-bottom: 12px;
+}
+
+#emailInput:focus {
+   border-color: var(--accent);
+}
+
+.pw-input:focus {
+   border-color: var(--accent);
+}
+
+.pw-btn {
+   width: 100%;
+   padding: 12px 14px;
+   border-radius: var(--radius);
+   border: none;
+   background: var(--accent);
+   color: #1a1400;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+.pw-error {
+   color: var(--danger);
+   font-size: 13px;
+   margin-top: 10px;
+   min-height: 16px;
+}

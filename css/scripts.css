@@ -1,0 +1,229 @@
+/* Script cards (used by Home, Scripts and Archive) */
+.script-card {
+   display: flex;
+   align-items: flex-start;
+   gap: 12px;
+   background: var(--surface);
+   border: 1px solid var(--border);
+   border-radius: var(--radius);
+   padding: 14px;
+   margin-bottom: 10px;
+}
+
+.status-checks {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   flex-shrink: 0;
+   margin-top: 1px;
+}
+
+.status-check-item {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+}
+
+.status-check-item label {
+   font-size: 11px;
+   color: var(--text-dim);
+   white-space: nowrap;
+   cursor: pointer;
+}
+
+.script-checkbox {
+   width: 18px;
+   height: 18px;
+   accent-color: var(--accent);
+   flex-shrink: 0;
+   cursor: pointer;
+}
+
+.rejected-checkbox {
+   width: 18px;
+   height: 18px;
+   accent-color: var(--danger);
+   flex-shrink: 0;
+   cursor: pointer;
+}
+
+.script-body {
+   flex: 1;
+   min-width: 0;
+}
+
+.script-title {
+   font-size: 15px;
+   font-weight: 600;
+   margin: 0 0 4px;
+   word-break: break-word;
+}
+
+.script-title.done {
+   text-decoration: line-through;
+   color: var(--text-dim);
+}
+
+.script-desc {
+   font-size: 13px;
+   color: var(--text-dim);
+   margin: 0 0 8px;
+   word-break: break-word;
+}
+
+.script-meta {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   font-size: 12px;
+   flex-wrap: wrap;
+}
+
+.status-badge {
+   padding: 2px 9px;
+   border-radius: 999px;
+   font-weight: 600;
+}
+
+.status-badge.done {
+   background: rgba(76, 175, 130, 0.15);
+   color: var(--done);
+}
+
+.status-badge.not-done {
+   background: rgba(217, 122, 95, 0.15);
+   color: var(--not-done);
+}
+
+.status-badge.approved {
+   background: rgba(90, 169, 230, 0.15);
+   color: var(--approved);
+}
+
+.status-badge.not-approved {
+   background: rgba(154, 154, 154, 0.15);
+   color: var(--not-approved);
+}
+
+.status-badge.rejected {
+   background: rgba(217, 83, 79, 0.15);
+   color: var(--danger);
+}
+
+.status-badge.not-rejected {
+   background: rgba(154, 154, 154, 0.15);
+   color: var(--not-approved);
+}
+
+.date-text {
+   color: var(--text-dim);
+}
+
+.added-by {
+   font-size: 11px;
+   color: var(--text-dim);
+   margin: 8px 0 0;
+   word-break: break-word;
+}
+
+.reaction-comment-row {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   margin-top: 8px;
+   flex-wrap: nowrap;
+}
+
+.reaction-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 34px;
+   height: 30px;
+   flex-shrink: 0;
+   font-size: 15px;
+   line-height: 1;
+   padding: 0;
+   background: var(--surface-2);
+   border: 1px solid var(--border);
+   border-radius: 8px;
+   color: var(--text-dim);
+}
+
+.reaction-btn:hover {
+   border-color: var(--accent);
+}
+
+.reaction-btn.active-like {
+   background: rgba(76, 175, 130, 0.15);
+   border-color: var(--done);
+}
+
+.reaction-btn.active-dislike {
+   background: rgba(217, 83, 79, 0.15);
+   border-color: var(--danger);
+}
+
+.delete-btn {
+   background: none;
+   border: none;
+   color: var(--text-dim);
+   font-size: 18px;
+   line-height: 1;
+   padding: 4px 6px;
+   flex-shrink: 0;
+}
+
+.delete-btn:hover {
+   color: var(--danger);
+}
+
+.edit-btn {
+   background: none;
+   border: none;
+   color: var(--text-dim);
+   font-size: 14px;
+   line-height: 1;
+   padding: 4px 6px;
+   flex-shrink: 0;
+}
+
+.edit-btn:hover {
+   color: var(--accent);
+}
+
+.card-actions {
+   display: flex;
+   gap: 2px;
+   flex-shrink: 0;
+}
+
+.edit-form {
+   flex: 1;
+   min-width: 0;
+}
+
+.edit-form input,
+.edit-form textarea {
+   width: 100%;
+   padding: 8px 10px;
+   border-radius: 8px;
+   border: 1px solid var(--border);
+   background: var(--surface-2);
+   color: var(--text);
+   font-size: 14px;
+   outline: none;
+   margin-bottom: 8px;
+   resize: vertical;
+}
+
+.edit-form input:focus,
+.edit-form textarea:focus {
+   border-color: var(--accent);
+}
+
+.edit-form-actions {
+   display: flex;
+   gap: 8px;
+   justify-content: flex-end;
+}

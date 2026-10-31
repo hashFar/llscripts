@@ -1,0 +1,157 @@
+/* Comments toggle button, panel, list and form */
+.comments-toggle-btn {
+   background: none;
+   border: none;
+   color: var(--text-dim);
+   font-size: 12px;
+   padding: 4px 0;
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   flex: 1 1 auto;
+   min-width: 0;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.comments-toggle-btn:hover {
+   color: var(--accent);
+}
+
+.comments-panel {
+   display: none;
+   margin-top: 8px;
+   padding-top: 8px;
+   border-top: 1px solid var(--border);
+}
+
+.comments-panel.active {
+   display: block;
+}
+
+.comments-list {
+   margin-bottom: 8px;
+}
+
+.comment-item {
+   padding: 6px 0;
+   border-bottom: 1px solid var(--border);
+}
+
+.comment-item:last-child {
+   border-bottom: none;
+}
+
+.comment-header {
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   flex-wrap: wrap;
+}
+
+.comment-author {
+   font-size: 12px;
+   font-weight: 600;
+   color: var(--text);
+}
+
+.comment-date {
+   font-size: 11px;
+   color: var(--text-dim);
+   margin-left: 6px;
+}
+
+.comment-text {
+   font-size: 13px;
+   color: var(--text);
+   margin: 4px 0 0;
+   word-break: break-word;
+}
+
+.comment-actions {
+   display: flex;
+   gap: 10px;
+   margin-top: 4px;
+}
+
+.comment-actions button {
+   background: none;
+   border: none;
+   padding: 0;
+   font-size: 11px;
+   font-weight: 600;
+}
+
+.comment-edit-btn {
+   color: var(--text-dim);
+}
+
+.comment-edit-btn:hover {
+   color: var(--accent);
+}
+
+.comment-delete-btn {
+   color: var(--text-dim);
+}
+
+.comment-delete-btn:hover {
+   color: var(--danger);
+}
+
+.comment-edit-input {
+   width: 100%;
+   padding: 6px 8px;
+   border-radius: 8px;
+   border: 1px solid var(--border);
+   background: var(--surface-2);
+   color: var(--text);
+   font-size: 13px;
+   outline: none;
+   resize: vertical;
+   margin: 4px 0 6px;
+}
+
+.comment-edit-input:focus {
+   border-color: var(--accent);
+}
+
+.comment-save-btn {
+   color: var(--accent);
+}
+
+.comment-cancel-btn {
+   color: var(--text-dim);
+}
+
+.comments-empty {
+   font-size: 12px;
+   color: var(--text-dim);
+   padding: 6px 0;
+}
+
+.comment-add {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+}
+
+.comment-input {
+   width: 100%;
+   padding: 8px 10px;
+   border-radius: 8px;
+   border: 1px solid var(--border);
+   background: var(--surface-2);
+   color: var(--text);
+   font-size: 13px;
+   outline: none;
+   resize: vertical;
+}
+
+.comment-input:focus {
+   border-color: var(--accent);
+}
+
+.comment-submit-btn {
+   align-self: flex-end;
+}

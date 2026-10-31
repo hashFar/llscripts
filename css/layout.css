@@ -1,0 +1,92 @@
+/* Page structure: app container, header, tabs, views, toolbar */
+#app {
+   display: none;
+   max-width: 720px;
+   margin: 0 auto;
+   padding: 20px 16px 60px;
+}
+
+.app-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   margin: 4px 0 18px;
+}
+
+.site-title {
+   font-size: 20px;
+   font-weight: 700;
+   color: var(--accent);
+   margin: 0;
+}
+
+.header-actions {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   flex-shrink: 0;
+}
+
+nav.tabs {
+   display: flex;
+   gap: 6px;
+   border-bottom: 1px solid var(--border);
+   margin-bottom: 18px;
+}
+
+.tab-btn {
+   background: none;
+   border: none;
+   color: var(--text-dim);
+   padding: 10px 4px;
+   margin-right: 18px;
+   font-size: 15px;
+   font-weight: 600;
+   border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+   color: var(--text);
+   border-bottom-color: var(--accent);
+}
+
+.view {
+   display: none;
+}
+
+.view.active {
+   display: block;
+}
+
+h2.section-heading {
+   font-size: 14px;
+   text-transform: uppercase;
+   letter-spacing: 0.06em;
+   color: var(--text-dim);
+   margin: 0 0 12px;
+}
+
+.home-date-heading {
+   margin-top: 22px;
+}
+
+.home-date-heading:first-child {
+   margin-top: 0;
+}
+
+/* Filters + add button row */
+.toolbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   margin-bottom: 16px;
+   flex-wrap: wrap;
+}
+
+.filters {
+   display: flex;
+   gap: 6px;
+   flex-wrap: wrap;
+}
