@@ -35,15 +35,80 @@ The project focuses on a clean interface, real-time database operations, user au
 | GitHub Pages | Frontend deployment |
 
 ## Project Structure
-The project uses a simple, single-page frontend architecture.
+
+The project follows a modular, single-page frontend architecture. HTML, CSS, and JavaScript are separated into dedicated files based on their responsibilities, making the code easier to maintain and extend.
 
 ```text
 llscripts/
 │
-├── index.html       # Main application and frontend
-├── logo.png         # Favicon/logo asset (if included)
-└── README.md        # Project documentation
+├── index.html
+│
+├── assets/
+│   └── logo.jpg
+│
+├── css/
+│   ├── main.css
+│   ├── variables.css
+│   ├── base.css
+│   ├── layout.css
+│   ├── components.css
+│   ├── login.css
+│   ├── scripts.css
+│   ├── comments.css
+│   └── responsive.css
+│
+├── js/
+│   ├── app.js
+│   │
+│   ├── config/
+│   │   └── supabase.js
+│   │
+│   ├── state/
+│   │   └── store.js
+│   │
+│   ├── services/
+│   │   ├── auth.service.js
+│   │   ├── scripts.service.js
+│   │   ├── comments.service.js
+│   │   ├── reactions.service.js
+│   │   └── profiles.service.js
+│   │
+│   ├── features/
+│   │   ├── auth.js
+│   │   ├── theme.js
+│   │   ├── navigation.js
+│   │   ├── scripts.js
+│   │   ├── filters.js
+│   │   ├── comments.js
+│   │   ├── reactions.js
+│   │   └── archive.js
+│   │
+│   ├── ui/
+│   │   ├── script-card.js
+│   │   ├── comment-card.js
+│   │   ├── modal.js
+│   │   └── helpers.js
+│   │
+│   └── views/
+│       ├── home.view.js
+│       ├── scripts.view.js
+│       └── archive.view.js
+│
+└── README.md
 ```
+
+### Folder Responsibilities
+
+- **assets/** – Images and other static assets.
+- **css/** – Stylesheets organised by UI component and responsibility.
+- **config/** – Supabase client configuration.
+- **state/** – Shared application state and caches.
+- **services/** – Supabase database operations and authentication services.
+- **features/** – Application functionality and event handling.
+- **ui/** – Reusable UI components and helper functions.
+- **views/** – Rendering of different application sections.
+- **app.js** – Main JavaScript entry point that initialises the application.
+- **index.html** – Main application structure.
 
 The frontend communicates directly with Supabase using its JavaScript client library, loaded through a CDN. A separate Node.js or Spring Boot backend is not required for this architecture.
 
